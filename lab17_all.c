@@ -1,4 +1,4 @@
-//ηΰδΰνθε 1
+//Γ§Γ Γ€Γ Γ­Γ¨Γ₯ 1
 #include <iostream>
 #include <conio.h>
 
@@ -27,7 +27,7 @@ int main ()
 }
 
 
-//ηΰδΰνθε 2
+//Γ§Γ Γ€Γ Γ­Γ¨Γ₯ 2
 #include <iostream>
 #include <conio.h>
 
@@ -48,7 +48,7 @@ int main ()
     return 0;
 }
 
-//ηΰδΰνθε 3
+//Γ§Γ Γ€Γ Γ­Γ¨Γ₯ 3
 #include <iostream>
 #include <conio.h>
 #include <limits.h>
@@ -76,7 +76,7 @@ int main ()
     return 0;
 }
 
-//ηΰδΰνθε 4
+//Γ§Γ Γ€Γ Γ­Γ¨Γ₯ 4
 #include <iostream>
 #include <conio.h>
 #include <limits.h>
@@ -100,7 +100,7 @@ int main ()
     return 0;
 }
 
-//ηΰδΰνθε 5
+//Γ§Γ Γ€Γ Γ­Γ¨Γ₯ 5
 #include <iostream>
 #include <conio.h>
 
@@ -115,7 +115,7 @@ int main ()
         std::cin >> a[i];
 
     for (i=1;i<n;i++)
-        for (j=2;j<n+1; j++)
+        for (j=i+1;j<n+1; j++)
             if (a[i]==a[j])
                 {
                     n1=i;
