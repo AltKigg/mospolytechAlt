@@ -1,0 +1,75 @@
+#task 1
+from array import *
+print('Insert size of massive:')
+n=int(input())
+print('Insert massive A:')
+a=[]
+for i in range(n):
+    a.append(int(input()))
+print('Insert massive B:')
+b=[]
+for i in range(n):
+    b.append(int(input()))
+    
+for i in range(n):
+    t=a[i] 
+    a[i]=b[i]
+    b[i]=t
+print ('A', a)
+print ('B', b)
+
+#task 2
+from array import *
+print('Insert size of massive:')
+n=int(input())
+print('Insert massive A:')
+a=[]
+for k in range(n):
+    a.append(int(input()))
+b=[]
+s=0
+for k in range(n):
+    for i in range(k):
+        s=s+a[i]
+    b.append(s/(k+1))
+    s=0
+
+print ('B', b)
+
+#task 3
+from array import *
+print('Insert size of massive:')
+n=int(input())
+print('Insert massive A:')
+a=[]
+for i in range(n):
+    a.append(int(input()))
+    if a[i]%2==1:
+        k=a[i]
+
+for i in range(n):
+    if (a[i]%2==1):
+        a[i]=k
+print ('A', a)
+
+#task 4
+from array import *
+print('Insert size of massive:')
+n=int(input())
+print('Insert massive A:')
+a=[]
+mn=mx=0
+for i in range(n):
+    a.append(int(input()))
+for i in range(n):
+    if a[i]>max(a):
+        mx=i
+    elif a[i]<min(a):
+        mn=i
+if mn<mx:
+    for mn in range(mx):
+        a[i]=0
+elif mn>mx:
+    for mx in range(mn):
+        a[i]=0
+print ('A', a)
