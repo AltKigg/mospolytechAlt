@@ -1,0 +1,68 @@
+//task 1
+#include <iostream>
+#include <conio.h>
+
+int main ()
+{
+    int n, i;
+    std::cout << "Insert size of massive: ";
+    std::cin >> n;
+    int a[n];
+    a[0]=1;
+    for (i=1;i<n;i++)
+        a[i]=a[i-1]+2;
+        
+    for (i=0;i<n;i++)
+        std::cout << a[i];
+    return 0;
+}
+
+//task2
+#include <iostream>
+#include <conio.h>
+
+int main ()
+{
+    int n, i, d;
+    std::cout << "Insert size of massive: ";
+    std::cin >> n;
+    int a[n];
+    std::cout << "Insert A ";
+    std::cin >> a[0];
+    std::cout << "Insert D ";
+    std::cin >> d;
+
+    for (i=1;i<n;i++)
+        a[i]=a[i-1]*d;
+        
+    for (i=0;i<n;i++)
+        std::cout << a[i] <<" ";
+    return 0;
+}
+
+//task3
+#include <iostream>
+#include <conio.h>
+
+int main ()
+{
+    int n, i;
+    std::cout << "Insert size of massive: ";
+    std::cin >> n;
+    int a[n];
+    std::cout << "Insert A ";
+    std::cin >> a[0];
+    std::cout << "Insert B ";
+    std::cin >> a[1];
+    a[2]=a[0]+a[1];
+    for (i=3;i<n;i++)
+        a[i]=a[i-1]*2;
+        
+    for (i=0;i<n;i++)
+        std::cout << a[i] <<" ";
+    return 0;
+}
+
+//task4
+
+//task5
