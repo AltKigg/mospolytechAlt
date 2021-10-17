@@ -1,0 +1,135 @@
+//task1
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main ()
+{
+    int a, b, t;
+    cout<<"A=";
+    cin >> a;
+    cout<<"B=";
+    cin >> b;
+    t=a;
+    a=b;
+    b=t;
+    cout<<"\nA="<< a <<"\nB=" <<b;
+    return 0;
+}
+//task2
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main ()
+{
+    int a, b, c, t;
+    cout<<"A=";
+    cin >> a;
+    cout<<"B=";
+    cin >> b;
+    cout<<"C=";
+    cin >> c;
+    t=b;
+    b=a;
+    a=c;
+    c=b;
+    
+    cout<<"\nA="<< a <<"\nB=" <<b <<"\nC=" <<c;
+    return 0;
+}
+//task3
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main ()
+{
+    int a, b, c, t;
+    cout<<"A=";
+    cin >> a;
+    cout<<"B=";
+    cin >> b;
+    cout<<"C=";
+    cin >> c;
+    t=a;
+    a=b;
+    b=c;
+    c=t;
+    
+    cout<<"\nA="<< a <<"\nB=" <<b <<"\nC=" <<c;
+    return 0;
+}
+//task 4
+#include <iostream>
+#include <conio.h>
+#include <cmath>
+
+using namespace std;
+
+int main ()
+{
+    int x, y;
+    cout<<"x=";
+    cin >> x;
+    y= 3*pow(x,6)-6*pow(x,2)-7;
+    cout<<"\ny="<<y;
+    return 0;
+}
+//task5
+#include <iostream>
+#include <conio.h>
+#include <cmath>
+
+using namespace std;
+
+int main ()
+{
+    int x, y;
+    cout<<"x=";
+    cin >> x;
+    y= 4*pow(x-3,6)-7*pow(x-3,3)+2;
+    cout<<"\ny="<<y;
+    return 0;
+}
+//task 6
+#include <iostream>
+#include <conio.h>
+#include <cmath>
+
+using namespace std;
+
+int main ()
+{
+    int x, y, z;
+    cout<<"A=";
+    cin >> x;
+    y= x*x;
+    y=y*y;
+    y=y*y;
+    cout<<"\na^8="<<y;
+    return 0;
+}
+//task7
+#include <iostream>
+#include <conio.h>
+#include <cmath>
+
+using namespace std;
+
+int main ()
+{
+    int x, y, z;
+    cout<<"A=";
+    cin >> x;
+    y=x*x;
+    z=y*x;
+    y=z*y;
+    z=y*y;
+    y=y*z;
+    cout<<"\na^15="<<y;
+    return 0;
+}
