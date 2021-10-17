@@ -1,0 +1,76 @@
+//task1
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+    int b, k;
+    cout<<"insert size in bytes";
+    cin>>b;
+    k=b/1024;
+    cout<<"\nin kilobytes: "<< k;
+    return 0;
+}
+//task2
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+    unsigned int a, b, k;
+    cout<<"A=";
+    cin>>a;
+    cout<<"B=";
+    cin>>b;
+    k=a/b;
+    cout<<"\nanswer is "<< k;
+    return 0;
+}
+//task3
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+    unsigned int a, b, k;
+    cout<<"A=";
+    cin>>a;
+    cout<<"B=";
+    cin>>b;
+    k=a%b;
+    cout<<"\nanswer is "<< k;
+    return 0;
+}
+//task4
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+    int a, b, k;
+    cout<<"Number is ";
+    cin>>a;
+    b=a/10;
+    k=a%10;
+    cout<<"\nanswer is "<< 10*k+b;
+    return 0;
+}
+//task5
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+    int a, b, k;
+    cout<<"Number is ";
+    cin>>a;
+    b=a/100;
+    a=(a-b*100)*10+b;
+    cout<<"\nanswer is "<< a;
+    return 0;
+}
