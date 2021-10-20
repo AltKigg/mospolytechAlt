@@ -1,0 +1,87 @@
+//task1
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int s;
+    cout<< "seconds right now: ";
+    cin >> s;
+    cout<<"seconds passed since last minute: " << s%60;
+    return 0;
+}
+//task2
+#include <iostream>
+
+int main()
+{
+    int k;
+    std::cout<< "Number of the day : ";
+    std::cin >> k;
+    std::cout<<"it is ";
+    char i=k%7;
+    switch (i) 
+    {
+        case 0: std::cout << "sunday";break;
+        case 1: std::cout << "monday";break;
+        case 2: std::cout << "tuesday";break;
+        case 3: std::cout << "wednesday";break;   
+        case 4: std::cout << "thursday";break;        
+        case 5: std::cout << "friday";break;
+        case 6: std::cout << "saturday";break;
+    }
+    return 0;
+}
+//task3
+#include <iostream>
+
+int main()
+{
+    int k, n;
+    std::cout<< "Number of the day : ";
+    std::cin >> k;
+    std::cout<< "first day was : ";
+    std::cin >> n;
+    std::cout<<"it is ";
+    char i=(k+n-1)%7;
+    switch (i) 
+    {
+        case 0: std::cout << "sunday";break;
+        case 1: std::cout << "monday";break;
+        case 2: std::cout << "tuesday";break;
+        case 3: std::cout << "wednesday";break;   
+        case 4: std::cout << "thursday";break;        
+        case 5: std::cout << "friday";break;
+        case 6: std::cout << "saturday";break;
+    }
+    return 0;
+}
+//task4
+#include <iostream>
+
+int main()
+{
+    int a, b, c, s, k;
+    std::cout<< "A : ";
+    std::cin >> a;
+    std::cout<< "B : ";
+    std::cin >> b;
+    std::cout<< "C : ";
+    std::cin >> c;
+    k= (a/c)*(b/c);
+    s= a*b-k*c*c;
+    std::cout<< "It can contain "<< k<< " squares\nUnused area: "<<s;
+    return 0;
+}
+//task5
+#include <iostream>
+
+int main()
+{
+    int n;
+    std::cout<< "Year: ";
+    std::cin >> n;
+    std::cout<<"it is "<< (n-1)/100+1<<" century";
+    return 0;
+}
