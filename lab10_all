@@ -1,0 +1,122 @@
+//task1
+#include <iostream>
+
+int main()
+{
+    int a,b;
+    std::cout<< "A: ";
+    std::cin >> a;
+    std::cout<< "B: ";
+    std::cin >> b;
+    std::cout<<"A>2 & B≤3?\n";
+    if (a>2&&b<=3) std::cout<<"true";
+    else std::cout<<"false";
+    return 0;
+}
+//task2
+#include <iostream>
+
+int main()
+{
+    int a,b,c;
+    std::cout<< "A: ";
+    std::cin >> a;
+    std::cout<< "B: ";
+    std::cin >> b;
+    std::cout<< "C: ";
+    std::cin >> c;
+    std::cout<<"A < B < C?\n";
+    if (a<b & b<c) std::cout<<"true";
+    else std::cout<<"false";
+    return 0;
+}
+//task3
+#include <iostream>
+
+int main()
+{
+    int a;
+    std::cout<< "Number: ";
+    std::cin >> a;
+    std::cout<<"Is "<<a<<" even and two-digit?\n";
+    if ((a%2==0)&(a<100)) std::cout<<"true";
+    else std::cout<<"false";
+    return 0;
+}
+//task4
+#include <iostream>
+
+int main()
+{
+    int a, a100, a10, a1;
+    std::cout<< "Number: ";
+    std::cin >> a;
+    std::cout<<"Is it forming increasing/decresing pattern?\n";
+    a100=a/100;
+    a10=a/10 - 10*a100;
+    a1=a%10;
+    if ((a100<a10&a10<a1)|(a100>a10&a10>a1))
+        std::cout<<"true\n";
+    else std::cout<<"false";
+    return 0;
+}
+//task5
+#include <iostream>
+
+int main()
+{
+    int a, a1000, a100, a10, a1;
+    std::cout<< "Number: ";
+    std::cin >> a;
+    std::cout<<"palindrome?\n";
+    a1000=a/1000;
+    a100=a/100-a1000*10;
+    a10=a/10 - 10*a100- 100*a1000;
+    a1=a%10;
+    if (a1000==a1&&a100==a10)
+        std::cout<<"true";
+    else std::cout<<"false";
+    return 0;
+}
+//task6
+#include <iostream>
+
+int main()
+{
+    int a,b,c;
+    std::cout<< "A: ";
+    std::cin >> a;
+    std::cout<< "B: ";
+    std::cin >> b;
+    std::cout<< "C: ";
+    std::cin >> c;
+    std::cout<< "90o triangle?\n";
+    if (a*a==b*b+c*c) std::cout<<"yes";
+    else 
+        if (b*b==a*a+c*c) std::cout<<"yes";
+        else
+            if (c*c==a*a+b*b) std::cout<<"yes";
+            else std::cout<<"no";
+    return 0;
+}
+//task7
+#include <iostream>
+
+int main()
+{
+    int a,b,c;
+    std::cout<< "A: ";
+    std::cin >> a;
+    std::cout<< "B: ";
+    std::cin >> b;
+    std::cout<< "C: ";
+    std::cin >> c;
+    std::cout<< "triangle exist?\n";
+    if (a<b+c) std::cout<<"yes";
+    else 
+        if (b<a+c) std::cout<<"yes";
+        else
+            if (c<a+b) std::cout<<"yes";
+            else std::cout<<"no";
+    return 0;
+}
