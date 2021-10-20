@@ -1,0 +1,116 @@
+//task1
+#include <iostream>
+
+int main()
+{
+    int a,b;
+    std::cout<< "A: ";
+    std::cin >> a;
+    std::cout<< "B: ";
+    std::cin >> b;
+    if (a!=b)
+    {
+        if (a>b) b=a;
+        else a=b;
+    }
+    else
+    {
+        a=0; b=0;
+    }
+    std::cout<< "A= "<<a<<"\nB= "<<b;
+    return 0;
+}
+//task2
+#include <iostream>
+
+int main()
+{
+    int a,b,c;
+    std::cout<< "A: ";
+    std::cin >> a;
+    std::cout<< "B: ";
+    std::cin >> b;
+    std::cout<< "C: ";
+    std::cin >> c;
+    if (c<a&c<b) std::cout<< "A+B "<<a+b;
+    else if (a<b&a<c) std::cout<< "B+C "<<c+b;
+    else if (b<a%b<c) std::cout<< "A+C "<<a+c;
+    return 0;
+}
+//task3
+#include <iostream>
+
+int main()
+{
+    int a,b,c;
+    std::cout<< "A: ";
+    std::cin >> a;
+    std::cout<< "B: ";
+    std::cin >> b;
+    std::cout<< "C: ";
+    std::cin >> c;
+    if (abs(a-b)<abs(a-c)) std::cout<< "B "<<abs(a-b);
+    else std::cout<< "C "<<abs(a-c);
+    return 0;
+}
+//task4
+#include <iostream>
+
+int main()
+{
+    int x,y;
+    std::cout<< "X: ";
+    std::cin >> x;
+    std::cout<< "Y: ";
+    std::cin >> y;
+    if (x>0) 
+        if (y>0)
+            std::cout<< "in I";
+        else std::cout<< "in IV";
+    else if (y>0)
+            std::cout<< "in II";
+        else std::cout<< "in III";
+    return 0;
+}
+//task5
+#include <iostream>
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    int n;
+    std::cout<< "N: ";
+    std::cin >> n;
+    if (n==0)
+        std::cout<<"нулевое ";
+    else
+    {
+        if (n>0) std::cout<<"положительное ";
+        else std::cout<<"отрицательное ";
+        if (n%2==0) std::cout<<"четное ";
+        else std::cout<<"нечетное ";
+    }
+    std::cout<<"число ";
+    return 0;
+}
+//task6
+#include <iostream>
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    int n;
+    std::cout<< "N: ";
+    std::cin >> n;
+    if (n%2==0) std::cout<<"четное ";
+    else std::cout<<"нечетное ";
+    if (n>9)
+        {
+            if (n>99)
+            std::cout<<"трехзначное ";
+            else std::cout<<"двухзначное ";
+        }
+    else std::cout<<"однозначное ";
+    std::cout<<"число";
+    return 0;
+}
