@@ -33,15 +33,14 @@ int main()
         case 19: std::cout << "девятнадцатое ";break;        
         case 20: std::cout << "двадцатое ";break;
     }
-    if (d>20)
+    if (d>20&d<30)
     {
-        if (d<30)
-            std::cout<<"двадцать ";
-        else 
-            std::cout<<"тридцатое ";
+        std::cout<<"двадцать ";
         d=d%10;
         goto heree;
     }
+    if (d==30) std::cout<<"тридцатое ";
+    if (d==31) std::cout<<"тридцать первое ";
     switch (m) 
     {
         case 1: std::cout << "января";break;
@@ -60,7 +59,54 @@ int main()
     return 0;
 }
 //task2
+#include <iostream>
 
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    char c;
+    int n;
+    cout<<"направление: ";
+    cin>>c;
+    if (c=='C') c=1;
+    else if (c=='Ю') c==2;
+    else if (c=='З') c==3;
+    else if (c=='В') ==4;
+            
+    cout<<"команда: ";
+    cin>>n;
+    /*switch (n) 
+    {
+    case 1: switch (c) 
+    {
+   		case 'С': cout << "З"; break;
+   		case 'Ю': cout << "В"; break;  
+   		case 'З': cout << "Ю"; break;
+   		case 'В': cout << "С"; break;
+    } break ;
+    
+	case -1: switch (c) 
+	{
+   		case 'С': cout << "В"; break;
+   		case 'Ю': cout << "З"; break;  
+   		case 'З': cout << "С"; break;
+   	    case 'В': cout << "Ю"; break;
+	} break;
+	
+	case 0: switch (c) 
+	{
+   		case 'С': cout << "С"; break;
+   		case 'Ю': cout << "Ю"; break;  
+   		case 'З': cout << "З"; break;
+   	    case 'В': cout << "В"; break;
+	} break;
+	
+   }*/
+   cout<<c<<" "<<n;
+    return 0;
+}
 //task3
 
 //task4
