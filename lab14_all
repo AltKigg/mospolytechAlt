@@ -1,0 +1,41 @@
+//task1
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a, b;
+    cout<<"A: ";
+    cin>>a;
+    cout<<"B: ";
+    cin>>b;
+    for(int i=a; i<=b ;i++)
+        for (int j=0; j<i; j++)
+            cout << i;
+    return 0;
+}
+//task2
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a, b, s;
+    cout<<"A: ";
+    cin>>a;
+    cout<<"B: ";
+    cin>>b;
+    for(s=a; s>b ;)
+        s=s-b;
+    cout<< s;
+    return 0;
+}
+//task3
+
+//task4
+
+//task5
+
+//task6
