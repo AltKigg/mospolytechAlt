@@ -1,0 +1,84 @@
+//task1
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    cout<<"price of 1kg: ";
+    cin>>n;
+    for(int i=1;i<=10 ;i++)
+        cout << float(i)/10 << " kg: "<<n*(float(i)/10)<<"\n";
+    return 0;
+}
+//task2
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    float s=1;
+    cout<<"N: ";
+    cin>>n;
+    for(float i=1.1; i<=n ;i+=0.1)
+        s*=i;
+    cout << "S= "<<s;
+    return 0;
+}
+//task3
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n, s=0;
+    cout<<"N: ";
+    cin>>n;
+    for(int i=1; i<=2*n-1 ;i+=2)
+        s+=i;
+    cout << "square of "<<n<<" = "<<s;
+    return 0;
+}
+//task4
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n, s=0;
+    cout<<"N: ";
+    cin>>n;
+    for(int i=1; i<=2*n-1 ;i+=2)
+    {
+        s+=i;
+        cout<<s<<"\n";
+    }
+    cout << "square of "<<n<<" = "<<s;
+    return 0;
+}
+//task5
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+    float a, s=0;
+    int n;
+    cout<<"N: ";
+    cin>>n;
+    cout<<"A: ";
+    cin>>a;
+    for(int i=0; i<=n ;i++)
+    {
+        s= s + pow(a,i)*pow(-1, i);
+    }
+    cout << "answer = "<< s;
+    return 0;
+}
