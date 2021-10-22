@@ -33,9 +33,81 @@ int main()
     return 0;
 }
 //task3
+#include <iostream>
 
+using namespace std;
+
+int main()
+{
+    int n, s=0, k=0;
+    cout<<"N: ";
+    cin>>n;
+    while (!(s+k+1 >n)) 
+    {
+        ++k;
+        s += k;
+    }
+    cout<< "K= "<<k<<"\nSumm= "<<s;
+    return 0;
+}
 //task4
+#include <iostream>
 
+using namespace std;
+
+int main()
+{
+    int k=1;
+    float p, s=1000;
+    cout<<"P: ";
+    cin>>p;
+    while (s <= 1100) 
+    {
+        ++k;
+        s+=s*p/100;
+    }
+    cout<< "K= "<<k<<"\nSumm= "<<s;
+    return 0;
+}
 //task5
+#include <iostream>
 
+using namespace std;
+
+int main()
+{
+    int a, b;
+    cout<<"А: ";
+    cin>>a;
+    cout<<"B: ";
+    cin>>b;
+    
+    while (a!=0 & b!=0) 
+    {
+        if (a>b) a=a%b;
+        else b=b%a;
+    }
+    cout<< "GCD= "<<a+b;
+    return 0;
+}
 //task6
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    cout<<"N: ";
+    cin>>n;
+    int  f = 0,f1 = 1, f2 = 1, k = 2;
+    while (f<n)
+    {
+        ++k;
+        f = f2+f1;
+        f2 = f1;
+        f1 = f;
+    }
+    cout<< "K= "<<k;
+    return 0;
+}
