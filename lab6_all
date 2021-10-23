@@ -35,7 +35,7 @@ int main ()
     t=b;
     b=a;
     a=c;
-    c=b;
+    c=t;
     
     cout<<"\nA="<< a <<"\nB=" <<b <<"\nC=" <<c;
     return 0;
