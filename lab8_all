@@ -8,7 +8,9 @@ int main ()
     int b, k;
     cout<<"insert size in bytes";
     cin>>b;
+    if (k%b==0)
     k=b/1024;
+    else k=b/1024+1;
     cout<<"\nin kilobytes: "<< k;
     return 0;
 }
