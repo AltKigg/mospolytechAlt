@@ -102,6 +102,9 @@ int main()
     int n;
     std::cout<< "N: ";
     std::cin >> n;
+    if (n>999&n<1)
+    std::cout <<"no";
+    else {
     if (n%2==0) std::cout<<"четное ";
     else std::cout<<"нечетное ";
     if (n>9)
@@ -111,6 +114,6 @@ int main()
             else std::cout<<"двухзначное ";
         }
     else std::cout<<"однозначное ";
-    std::cout<<"число";
+    std::cout<<"число";}
     return 0;
 }
