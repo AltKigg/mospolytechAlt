@@ -26,8 +26,10 @@ int main ()
     cin>>a;
     cout<<"B=";
     cin>>b;
+    if (a>b){
     k=a/b;
-    cout<<"\nanswer is "<< k;
+    cout<<"\nanswer is "<< k;}
+    else cout<<"no";
     return 0;
 }
 //task3
@@ -42,8 +44,10 @@ int main ()
     cin>>a;
     cout<<"B=";
     cin>>b;
+    if (a>b){
     k=a%b;
-    cout<<"\nanswer is "<< k;
+    cout<<"\nanswer is "<< k;}
+    else cout<<"no";
     return 0;
 }
 //task4
@@ -56,9 +60,11 @@ int main ()
     int a, b, k;
     cout<<"Number is ";
     cin>>a;
-    b=a/10;
+    if (a>9&a<100)
+    {b=a/10;
     k=a%10;
-    cout<<"\nanswer is "<< 10*k+b;
+    cout<<"\nanswer is "<< 10*k+b;}
+    else cout<<"no";
     return 0;
 }
 //task5
@@ -71,8 +77,10 @@ int main ()
     int a, b, k;
     cout<<"Number is ";
     cin>>a;
-    b=a/100;
+    if (a>99&a<1000)
+    {b=a/100;
     a=(a-b*100)*10+b;
-    cout<<"\nanswer is "<< a;
+    cout<<"\nanswer is "<< a;}
+    else cout<<"no";
     return 0;
 }
