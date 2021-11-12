@@ -7,38 +7,28 @@ using namespace std;
 
 int main ()
 {
+    int num;
+    cout<<"Task number: ";
+    cin>> num;
+    switch(num){
+    case 1:
+    {
     float a, r;
     cout<<"A=";
     cin >> a;
     r=a*M_PI/180;
     cout<<"\n"<<r;
-    return 0;
-}
-//task2
-#include <iostream>
-#include <conio.h>
-#include <cmath>
-
-using namespace std;
-
-int main ()
-{
+    break;
+    }
+    case 2 : {
     float a, r;
     cout<<"A=";
     cin >> a;
     r=a*180/M_PI;
     cout<<"\n"<<r;
-    return 0;
-}
-//task3
-#include <iostream>
-#include <conio.h>
-#include <cmath>
-
-using namespace std;
-
-int main ()
-{
+    break;
+    }
+    case 3: {
     float a, x, y, s1, s2;
     cout<<"X (kg)=";
     cin >> x;
@@ -50,17 +40,10 @@ int main ()
     s2=s1*y;
     cout<<"\n1kg costs="<<s1;
     cout<<"\n"<<y<<"kg costs="<<s2;
-    return 0;
-}
-//task4
-#include <iostream>
-#include <conio.h>
-#include <cmath>
-
-using namespace std;
-
-int main ()
-{
+    break;
+    }
+    case 4:
+    {
     float v1, v2, s, t;
     cout<<"v1=";
     cin >> v1;
@@ -72,17 +55,9 @@ int main ()
     cin >> t;
     s+=(v1+v2)*t;
     cout<<"\nafter "<< t<<" hours S = "<< s;
-    return 0;
-}
-//task5
-#include <iostream>
-#include <conio.h>
-#include <cmath>
-
-using namespace std;
-
-int main ()
-{
+    break;
+    }
+    case 5:{
     float a, b, x;
     cout<<"A=";
     cin >> a;
@@ -90,17 +65,9 @@ int main ()
     cin >> b;
     x=-b/a;
     cout<<"\nx = "<< x;
-    return 0;
-}
-//task6
-#include <iostream>
-#include <conio.h>
-#include <cmath>
-
-using namespace std;
-
-int main ()
-{
+    break;
+    }
+    case 6:{
     float a1, b1, c1, a2, b2, c2, x, y;
     cout<<"A1=";
     cin >> a1;
@@ -114,9 +81,11 @@ int main ()
     cin >> b2;
     cout<<"C2=";
     cin >> c2;
-    y= (c1*a2-c2*a1)/(a2*b1-a1*b2);
-    x= (c1-b1*y)/a1;
+    x= (c1*b2-b1*c2)/(a1*b2-b1*a2);
+    y= (a1*c2-a2*c1)/(a1*b2-b1*a2);
     cout<<"\nx = "<< x;
     cout<<"\ny = "<< y;
+    break;
+    }}
     return 0;
 }
