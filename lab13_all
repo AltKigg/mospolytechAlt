@@ -1,39 +1,30 @@
 //task1
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
 int main()
 {
+    int num;
+    cout<<"Task number: ";
+    cin>> num;
+    switch(num){
+case 1: {
     int n;
     cout<<"price of 1kg: ";
     cin>>n;
     for(int i=1;i<=10 ;i++)
-        cout << float(i)/10 << " kg: "<<n*(float(i)/10)<<"\n";
-    return 0;
-}
-//task2
-#include <iostream>
-
-using namespace std;
-
-int main()
-{
+        cout << float(i)/10 << " kg: "<<n*(float(i)/10)<<"\n"; break;}
+case 2: {
     int n;
     float s=1;
     cout<<"N: ";
     cin>>n;
     for(float i=1.1; i<=n ;i+=0.1)
         s*=i;
-    cout << "S= "<<s;
-    return 0;
-}
-//task3
-#include <iostream>
-
-using namespace std;
-
-int main()
+    cout << "S= "<<s; break;}
+case 3: 
 {
     int n, s=0;
     cout<<"N: ";
@@ -41,14 +32,9 @@ int main()
     for(int i=1; i<=2*n-1 ;i+=2)
         s+=i;
     cout << "square of "<<n<<" = "<<s;
-    return 0;
+    break;
 }
-//task4
-#include <iostream>
-
-using namespace std;
-
-int main()
+case 4:
 {
     int n, s=0;
     cout<<"N: ";
@@ -59,15 +45,9 @@ int main()
         cout<<s<<"\n";
     }
     cout << "square of "<<n<<" = "<<s;
-    return 0;
+    break;
 }
-//task5
-#include <iostream>
-#include <cmath>
-
-using namespace std;
-
-int main()
+case 5:
 {
     float a, s=0;
     int n;
@@ -80,5 +60,7 @@ int main()
         s= s + pow(a,i)*pow(-1, i);
     }
     cout << "answer = "<< s;
-    return 0;
+    break;
 }
+return 0;
+}}
