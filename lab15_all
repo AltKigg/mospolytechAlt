@@ -1,0 +1,116 @@
+#include <iostream>
+#include <conio.h>
+#include <math.h>
+float PowerA3(float a, float b)
+{
+    b=a*a*a;
+    return(b);
+}
+
+int sign(float x)
+{
+    if (x==0) return 0;
+    else if (x<0) return -1;
+    else if (x>0) return 1;
+}
+
+float RingS(float r1, float r2)
+{
+    float s= M_PI*r1*r1 - M_PI*r2*r2;
+    return s;
+}
+
+int quarter(float x, float y)
+{
+    if (x>0)
+        if (y>0) return 1;
+        else return 4;
+    else if (y>0) return 2;
+        else return 3;
+}
+
+float fact2(int n)
+{
+    float s=1;
+    int k;
+    if (n%2==1)
+    {k=1;
+    while (k<=n)
+    {
+        s*=k;
+        k+=2;
+    }}
+    else
+    {k=2;
+    while (k<=n)
+    {
+        s*=k;
+        k+=2;
+    }}
+    return s;
+}
+
+
+int main ()
+{
+    int num;
+    std::cout<<"Task number: ";
+    std::cin>> num;
+    switch(num){
+case 1:{
+    float n,k;
+    for (int i=0; i<5; i++)
+    {
+        std::cout<<"\nвведите "<<i+1<<" число: ";
+        std::cin>> n;
+        std::cout<<n<<" в 3 степени = "<<PowerA3(n, k);
+    }
+    break;}
+case 2:{
+    float a, b;
+    std::cout<<"введите A: ";
+    std::cin>> a;
+    std::cout<<"введите B: ";
+    std::cin>> b;
+    std::cout<<"Sign(A) + Sign(B) = "<< sign(a)+sign(b);
+    break;}
+case 3:{
+    float r1, r2;
+    for (int i=0; i<3; i++)
+    {
+    std::cout<<"\n"<<i+1<<" кольцо\n"<<"введите R1: ";
+    std::cin>> r1;
+    std::cout<<"введите R2: ";
+    std::cin>> r2;
+    if (r1>r2)
+    std::cout<<"Площадь кольца = "<<RingS(r1, r2);
+    else
+    std::cout<<"неверные введеные значения";
+    }
+    break;}
+case 4:{
+    for (int i=0; i<3; i++)
+    {
+    float x, y;
+    std::cout<<"\n"<<i+1<<" координаты\n"<<"введите X: ";
+    std::cin>> x;
+    std::cout<<"введите Y: ";
+    std::cin>> y;
+    if (x!=0 & y!=0)
+    std::cout<<"Площадь кольца = "<<quarter(x, y);
+    else
+    std::cout<<"неверные введеные значения";
+    }
+    break;}
+case 5:{
+    int n;
+    std::cout<<"Введите число: ";
+    std::cin>>n;
+    if (n>0)
+    std::cout<<"Двойной факториал = "<<fact2(n);
+    else
+    std::cout<<"неверные введеные значения";
+    break;}
+    return 0;
+}
+}
