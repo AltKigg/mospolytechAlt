@@ -17,11 +17,13 @@ case 1: {
         cout << float(i)/10 << " kg: "<<n*(float(i)/10)<<"\n"; break;}
 case 2: {
     int n;
+    int k=1;
     float s=1;
     cout<<"N: ";
     cin>>n;
-    for(float i=1.1; i<=n ;i+=0.1)
-        s*=i;
+    for(float i=1.1; k<=n ;i+=0.1)
+        {s*=i;
+        k++;}
     cout << "S= "<<s; break;}
 case 3: 
 {
@@ -29,21 +31,27 @@ case 3:
     cout<<"N: ";
     cin>>n;
     for(int i=1; i<=2*n-1 ;i+=2)
-        s+=i;
+        {s+=i;
+        cout << s<<" \n";
+        }
     cout << "square of "<<n<<" = "<<s;
     break;
 }
 case 4:
 {
-    int n, s=0;
+    float a, s=1;
+    int n;
+    cout<<"A: ";
+    cin>>a;
     cout<<"N: ";
     cin>>n;
-    for(int i=1; i<=2*n-1 ;i+=2)
+    if (n>0){
+    for(int i=1; i<=n ;i++)
     {
-        s+=i;
-        cout<<s<<"\n";
+        s+=pow(a,i);
     }
-    cout << "square of "<<n<<" = "<<s;
+    cout << "Summ = "<<s;}
+    else cout<<"wrong";
     break;
 }
 case 5:
