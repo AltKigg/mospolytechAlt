@@ -97,7 +97,7 @@ case 4:{
     std::cout<<"введите Y: ";
     std::cin>> y;
     if (x!=0 & y!=0)
-    std::cout<<"Площадь кольца = "<<quarter(x, y);
+    std::cout<<"квадрант = "<<quarter(x, y);
     else
     std::cout<<"неверные введеные значения";
     }
