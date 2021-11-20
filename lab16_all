@@ -18,7 +18,7 @@ case 1:{
         a[i]=a[i-1]+2;
         
     for (i=0;i<n;i++)
-        std::cout << a[i];}
+        std::cout << a[i]<<"\n";}
     else std::cout <<"no";
     break;}
 case 2:{
