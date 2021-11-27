@@ -84,4 +84,5 @@ case 5:{
         std::cout << a[i] <<" ";
     break;}
 }
+return 0;
 }
